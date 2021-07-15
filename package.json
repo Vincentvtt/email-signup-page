@@ -1,0 +1,24 @@
+{
+  "name": "email-signup-page",
+  "version": "1.0.0",
+  "description": "Email signup page with mailchimp and deployed on heroku",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vincentvtt/email-signup-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vincentvtt/email-signup-page/issues"
+  },
+  "homepage": "https://github.com/Vincentvtt/email-signup-page#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
