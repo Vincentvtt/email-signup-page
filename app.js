@@ -8,6 +8,7 @@ app.use(express.static("public"));
 const API_KEY = "056131b7e7c633395f65cc13cde20902-us6";
 const LIST_ID = "65f6f1928f";
 const URL = "https://us6.api.mailchimp.com/3.0/lists/" + LIST_ID + "?skip_merge_validation=true";
+const PORT = process.env.PORT || 5000
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/signup.html");
@@ -51,6 +52,6 @@ app.post("/redirect", (req, res) => {
     res.redirect("/");
 })
 
-app.listen(3000, (req, res) => {
+app.listen(PORT || 3000, (req, res) => {
   console.log("Server has started on port 3000");
 });
